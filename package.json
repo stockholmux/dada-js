@@ -1,0 +1,24 @@
+{
+  "name": "DadaJS",
+  "description": "A framework & extension for AbsurdJS",
+  "version": "0.3.17",
+  "main": "./dada.js",
+  "author": {
+    "name": "Kye J. Davis",
+    "email": "kyle@higheredcareers.ca"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "xtend" : "*",
+    "absurd" : "0.3.17",
+    "onecolor" : "2.4.0"
+  },
+  "keywords": [
+    "css",
+    "preprocessor"
+  ],
+   "repository": {
+    "type": "git",
+    "url": "https://github.com/stockholmux/dada-js"
+  }
+}

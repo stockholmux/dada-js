@@ -1,0 +1,41 @@
+h1, h3, h5 {
+  font-weight: 800;
+  padding-top: 0.5em;
+}
+h1, h2 {
+  font-size: 68.54101966249685px;
+}
+h1, h3, h5, h2, h4, h6 {
+  font-family: 'Cuprum' sans-serif;
+}
+h1, h3, h5, h2, h4, h6, body, html {
+  margin: 0;
+}
+h3, h4 {
+  font-size: 42.3606797749979px;
+}
+h5, h6 {
+  font-size: 26.18033988749895px;
+}
+h2, h4, h6 {
+  font-weight: 200;
+  color: #99A;
+  padding-top: 0;
+}
+body, html {
+  padding: 0;
+  color: rgb(68,68,102);
+}
+p, ul, li {
+  font-family: 'Merriweather' serif;
+}
+a {
+  color: #FFCB2F;
+  text-decoration: none;
+  padding: 2px;
+  background-color: rgba(68,68,102,0.025);
+}
+header, nav, section, footer {
+  padding-left: 2em;
+  padding-right: 2em;
+}

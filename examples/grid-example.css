@@ -1,0 +1,40 @@
+.block-group, .block-group:before, .block-group:after, .block, .block:before, .block:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.block-group {
+  *zoom: 1;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.block-group:before, .block-group:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.block-group:after {
+  clear: both;
+}
+.block, .block-group > .block-group {
+  float: left;
+}
+.block {
+  width: 100%;
+  color: rgb(100,100,100);
+  background-color: rgb(200,200,200);
+  text-align: center;
+  border: 1px solid rgb(150,150,150);
+  padding: 5px 0;
+}
+.block-group > .block-group {
+  clear: none;
+  margin: 0 !important;
+}
+.nav {
+  width: 40%;
+}
+.main {
+  width: 60%;
+}
