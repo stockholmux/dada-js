@@ -1,7 +1,7 @@
 {
   "name": "dada-js",
   "description": "A framework & extension for AbsurdJS",
-  "version": "0.3.17",
+  "version": "0.3.18",
   "main": "./dada.js",
   "author": {
     "name": "Kye J. Davis",
