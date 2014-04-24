@@ -2,9 +2,6 @@ var
   Absurd = require('absurd'),
   extend = require('xtend'),
   color = require('onecolor'),
-  elementEvaluator,
-  testStyles,
-  leftVar = 'html',
   pairToObj,
   dada = {},
   d;
