@@ -1,5 +1,5 @@
 {
-  "name": "DadaJS",
+  "name": "dada-js",
   "description": "A framework & extension for AbsurdJS",
   "version": "0.3.17",
   "main": "./dada.js",
