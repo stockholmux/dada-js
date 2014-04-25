@@ -37,7 +37,7 @@ Another example of the _left-side_ problem is non-evaluation. Anything in an obj
             }
         },
         causesError = {
-            '.lots .of-classes .in-super .long-selector,'%2B
+            '.lots .of-classes .in-super .long-selector,'+
             '.maybe .you .want .it-in-multiple .lines' : {
                 color : 'red'
             }
@@ -62,7 +62,7 @@ Quoting, for me, was the worst part about defining styles in AbsurdJS. Left-side
         baselineSize = '24px';
         ugh = {
             h2 : {
-                fontSize : baselineSize %2B '5px', // = 24px5px (not good)
+                fontSize : baselineSize + '5px' // = 24px5px (not good)
             }
         }
 
@@ -101,7 +101,7 @@ DadaJS introduces _Array Zero Selectors_. This means that your zeroth element in
         myStyle = [
             [
                 [ someSelectors, { color : 'red' } ],
-                [ someSelectors%2B',h4', { fontWeight : 800 } ]
+                [ someSelectors+',h4', { fontWeight : 800 } ]
             ]
         ];
 
