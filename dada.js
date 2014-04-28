@@ -497,4 +497,10 @@ dada.assemblage = function(inArray) {
   };
 };
 
+dada.absurdRegister = function(api) {
+  api.register('dada', function(inArray) {
+    return dada.assemblage(inArray)(api);
+  });
+};
+
 module.exports = dada;
