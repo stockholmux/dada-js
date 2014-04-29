@@ -461,29 +461,50 @@ dada.gridWidth = function(fraction) {
 pairToObj = function(inArray, api) {
   var
     outStyles = {};
+
   inArray.forEach(function(anElement){
     var
+      selector,
+      childBlocks,
+      i;
+    
+    if (Array.isArray(anElement)) {
       selector = anElement[0];
+      childBlocks  = anElement.slice(1);
     
-    if (!outStyles[anElement[0]]) {
-      outStyles[anElement[0]] = {};
-    }
-    
-    anElement.slice(1).forEach(function(aRuleSet,index) {
-      if (Array.isArray(aRuleSet)) {
-        anElement[index+1] = pairToObj(aRuleSet);
+      if (!outStyles[anElement[0]]) {
+        outStyles[anElement[0]] = {};
       }
-    });
-    
-    if (Array.isArray(selector)) {
-      selector = selector.join(',');
+      
+      childBlocks.forEach(function(aRuleSet,index) {
+        if (Array.isArray(aRuleSet)) {
+          childBlocks[index] = pairToObj(aRuleSet);
+        }
+      });
+      
+      if (Array.isArray(selector)) {
+        selector = selector.join(',');
+      }
+      outStyles[selector] = extend.apply(this,childBlocks);
+    } else {
+      outStyles['&'] = anElement;
     }
-    
-    outStyles[selector] = extend.apply(this,anElement.slice(1));
   });
   
   return outStyles;
 };
+
+dada.fallback = function(property, values) {
+  var outObj = {};
+  
+  
+  values.forEach(function(aValue,index) {
+    outObj['%'+index+'%'+property] = aValue;
+  });
+  
+  return outObj;
+}
+
 
 dada.assemblage = function(inArray) {
   return function(api) {

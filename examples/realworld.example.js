@@ -106,8 +106,18 @@ with (dada.cssVocab) {
 }
 
 
-
-
+/* alternate way of invoking dada */
+/*Absurd(function(api) {
+  dada.absurdRegister(api);
+  api.dada(styles);
+}).compile(function(err, css) {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log(css);
+    fs.writeFileSync('realworld.css',css);
+  }
+});*/
 Absurd(dada.assemblage(styles)).compile(function(err, css) {
   if (err) {
     console.log(err);
