@@ -77,7 +77,7 @@ dada.cssVocab = {
   attr : cssFunction('attr'),
   visible : 'visible',
   repeat : 'repeat',
-  noRepeat : 'noRepeat',
+  noRepeat : 'no-repeat',
   repeatY : 'repeat-y',
   repeatX : 'repeat-x',
   space : 'space',
